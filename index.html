@@ -1,1 +1,396 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102b50">
+<title>Quest School of Driving | Bulawayo</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #17263a;
+  line-height: 1.6;
+}
+
+header {
+  background: #102b50;
+  color: white;
+  padding: 15px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-area img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+}
+
+.logo-text h2 {
+  color: #f2c94c;
+  font-size: 21px;
+}
+
+.logo-text p {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f2c94c;
+}
+
+.hero {
+  background: linear-gradient(120deg, #102b50, #1d4979);
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #f2c94c;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 17px;
+  color: #e0e8f2;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-gold {
+  background: #f2c94c;
+  color: #102b50;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.section h2 {
+  color: #102b50;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.intro {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  color: #657386;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 28px 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  border-bottom: 4px solid #f2c94c;
+}
+
+.card .symbol {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #102b50;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #667085;
+  font-size: 14px;
+}
+
+.portal {
+  background: #eaf0f7;
+}
+
+.portal-box {
+  max-width: 800px;
+  background: white;
+  margin: auto;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+}
+
+.portal-box h3 {
+  color: #102b50;
+  margin-bottom: 12px;
+}
+
+.status {
+  display: inline-block;
+  background: #fff4cf;
+  color: #795800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+footer {
+  background: #102b50;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer strong {
+  color: #f2c94c;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 5px;
+}
+
+@media(max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 65px 18px;
+  }
+
+  .section {
+    padding: 50px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="quest-logo.jpeg" alt="Quest School of Driving Logo">
+    <div class="logo-text">
+      <h2>QUEST</h2>
+      <p>SCHOOL OF DRIVING</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#learning">Learning</a>
+    <a href="#student-access">Student Portal</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Welcome to <span>QUEST</span></h1>
+  <h2>School of Driving</h2>
+
+  <p>
+    Learn. Practice. Prepare for the road.
+    Your journey towards becoming a confident
+    and responsible driver starts here.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#learning" class="btn btn-gold">
+      Start Learning
+    </a>
+
+    <a href="#student-access" class="btn btn-outline">
+      Student Portal
+    </a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>SAFE DRIVERS • BRIGHTER FUTURES</h2>
+
+  <p class="intro">
+    Quest School of Driving is committed to helping
+    learners develop the knowledge, confidence and
+    responsible driving skills needed to use our roads safely.
+    We are based in Bulawayo, Zimbabwe.
+  </p>
+</section>
+
+<section class="section" id="learning">
+  <h2>Our Learning Platform</h2>
+
+  <p class="intro">
+    Prepare for your driving journey through structured
+    learning resources and online theory practice.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="symbol">🚦</div>
+      <h3>Road Signs</h3>
+      <p>
+        Understand Zimbabwean road signs,
+        their meanings and instructions.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">📖</div>
+      <h3>Driving Theory</h3>
+      <p>
+        Study road rules, traffic regulations,
+        road markings and safe driving.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">📝</div>
+      <h3>Practice Tests</h3>
+      <p>
+        Prepare with multiple-choice driving
+        theory practice examinations.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">🏆</div>
+      <h3>Track Your Progress</h3>
+      <p>
+        Review your examination marks
+        and improve your knowledge.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section portal" id="student-access">
+  <div class="portal-box">
+    <h2>Student Portal</h2>
+
+    <h3>Your Driving Learning Journey Starts Here</h3>
+
+    <p>
+      The Quest online student portal is being developed.
+      Students will soon be able to register, access learning
+      materials, write online examinations and receive
+      their results immediately after submission.
+    </p>
+
+    <span class="status">STUDENT PORTAL COMING SOON</span>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Quest?</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="symbol">🎯</div>
+      <h3>Quality Learning</h3>
+      <p>Structured learning to develop responsible motorists.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">💻</div>
+      <h3>Online Preparation</h3>
+      <p>Convenient theory practice using your phone or computer.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">🛡️</div>
+      <h3>Road Safety</h3>
+      <p>Promoting safe and responsible driving habits.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <strong>QUEST SCHOOL OF DRIVING</strong>
+  <p>SAFE DRIVERS • BRIGHTER FUTURES</p>
+  <p>Bulawayo, Zimbabwe</p>
+  <p>© 2026 Quest School of Driving. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
